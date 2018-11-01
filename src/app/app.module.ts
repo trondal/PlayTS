@@ -3,17 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { UserComponent } from './user-component/user.component';
-import { UserService } from './services/user-service';
+import { AsyncAwaitComponent } from './async-await/async-await.component';
 
 @NgModule({
   declarations: [
-    AppComponent, UserComponent
+    AppComponent, AsyncAwaitComponent
   ],
   imports: [
     BrowserModule, FormsModule
   ],
-  providers: [UserService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
